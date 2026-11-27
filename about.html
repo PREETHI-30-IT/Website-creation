@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About Alex Morgan.">
+  <title>About | Alex Morgan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Alex Morgan home">AM<span>.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a><a class="active" href="about.html" aria-current="page">About</a>
+        <a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main class="container page">
+    <header class="page-header">
+      <p class="eyebrow">About me</p>
+      <h1>Curious by nature.<br><span>Intentional by design.</span></h1>
+    </header>
+    <section class="about-grid">
+      <div class="portrait-wrap portrait-small">
+        <img src="images/profile.jpg" alt="Portrait of Alex Morgan" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <div class="portrait-fallback" hidden aria-label="Alex Morgan profile placeholder">AM</div>
+      </div>
+      <div class="about-copy">
+        <p class="lead">I'm a multidisciplinary designer and front-end developer focused on creating useful, human-centered products.</p>
+        <p>My approach combines research, visual systems, and pragmatic development. I enjoy turning complex ideas into simple experiences and collaborating closely with teams that care about the details.</p>
+        <p>Sample bio: replace this text with your story, experience, location, and the kind of work you would most like to do.</p>
+        <a class="text-link" href="projects.html">Explore selected projects <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

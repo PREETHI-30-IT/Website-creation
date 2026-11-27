@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Alex Morgan.">
+  <title>Contact | Alex Morgan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Alex Morgan home">AM<span>.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a><a class="active" href="contact.html" aria-current="page">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main class="container page">
+    <header class="page-header">
+      <p class="eyebrow">Start a conversation</p>
+      <h1>Let's create <span>together.</span></h1>
+    </header>
+    <section class="contact-grid">
+      <div class="contact-details">
+        <p class="lead">Have a project in mind or just want to say hello? I'd be happy to hear from you.</p>
+        <p><strong>Email</strong><br><a href="mailto:hello@example.com">hello@example.com</a></p>
+        <p><strong>Location</strong><br>Sample City, Country</p>
+        <p class="form-note">This is a frontend demo. Messages are not sent or stored.</p>
+      </div>
+      <form id="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+          <span class="error" id="name-error"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <span class="error" id="email-error"></span>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <span class="error" id="message-error"></span>
+        </div>
+        <button class="button" type="submit">Send message</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

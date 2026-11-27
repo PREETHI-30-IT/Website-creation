@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alex Morgan's personal portfolio — design and front-end development.">
+  <title>Alex Morgan | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Alex Morgan home">AM<span>.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a class="active" href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Designer &amp; Developer</p>
+        <h1>Hello, I'm <span>Alex Morgan.</span></h1>
+        <p class="lead">I build thoughtful digital experiences that balance clear strategy, elegant design, and reliable code.</p>
+        <div class="button-row">
+          <a class="button" href="projects.html">View my work</a>
+          <a class="button button-secondary" href="contact.html">Get in touch</a>
+        </div>
+      </div>
+      <div class="portrait-wrap">
+        <img src="images/profile.jpg" alt="Portrait of Alex Morgan" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <div class="portrait-fallback" hidden aria-label="Alex Morgan profile placeholder">AM</div>
+      </div>
+    </section>
+
+    <section class="highlights container" aria-label="Portfolio highlights">
+      <article><strong>5+</strong><span>Years of experience</span></article>
+      <article><strong>24</strong><span>Projects delivered</span></article>
+      <article><strong>12</strong><span>Happy clients</span></article>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
